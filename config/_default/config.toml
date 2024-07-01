@@ -7,14 +7,18 @@ enableGitInfo = false
 enableRobotsTXT = true
 paginate = 7
 rssLimit = 10
+
 [params]
 getStartedURL = "/docs/ff_team/general_information/order-page-ff/"
+assets = "static"
 
 [languages]
+
 [languages.en]
 languageName = "English"
 contentDir = "content/en"
 weight = 1
+
 [languages.en.params]
 languageISO = "EN"
 languageTag = "en-US"
@@ -23,6 +27,7 @@ languageTag = "en-US"
 languageName = "Russian"
 contentDir = "content/ru"
 weight = 2
+
 [languages.ru.params]
 languageISO = "RU"
 languageTag = "ru-RU"
