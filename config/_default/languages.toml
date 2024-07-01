@@ -1,0 +1,19 @@
+[languages]
+[languages.en]
+languageName = "English"
+contentDir = "content/en"
+weight = 10
+[languages.en.params]
+languageISO = "EN"
+languageTag = "en-US"
+
+[languages.ru]
+languageName = "Russian"
+contentDir = "content/ru"
+weight = 20
+[languages.ru.params]
+languageISO = "RU"
+languageTag = "ru-RU"
+titleAddition = "Современная документация"
+description = "Doks — это тема Hugo, которая позволяет создавать современные веб-сайты документации, которые безопасны, быстры и готовы к SEO по умолчанию."
+titleHome = "Тема Doks"

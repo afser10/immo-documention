@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }}</title>
+  <!-- Подключение библиотеки Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Другие стили вашего проекта -->
+  <link rel="stylesheet" href="/css/custom.css"> <!-- Путь к вашим собственным стилям -->
+</head>
+<body>
+<header>
+  <div class="language-switcher">
+    <ul>
+      {{ range .Site.Languages }}
+      <li>
+        <a href="{{ .Lang | relLangURL }}" {{ if eq $.Lang .Lang }}class="active"{{ end }}>
+          {{ if eq .Lang "en" }}
+          <i class="fas fa-flag-usa"></i> English
+          {{ else if eq .Lang "ru" }}
+          <i class="fas fa-flag"></i> Russian
+          {{ else }}
+          {{ .LanguageName }}
+          {{ end }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</header>
+<main>
+  {{ block "main" . }}{{ end }}
+</main>
+<footer>
+  <!-- Код футера, включая ссылки на социальные сети, информацию о копирайте и т.д. -->
+</footer>
+<!-- Подключение скриптов -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.0/js/lightbox.js"></script>
+<!-- Другие скрипты вашего проекта -->
+</body>
+</html>

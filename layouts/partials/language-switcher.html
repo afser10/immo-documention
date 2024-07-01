@@ -1,0 +1,17 @@
+<div class="language-switcher">
+  <ul>
+    {{ range .Site.Languages }}
+    <li>
+      <a href="{{ .Lang | relLangURL }}" {{ if eq $.Lang .Lang }}class="active"{{ end }}>
+        {{ if eq .Lang "en" }}
+        <i class="fas fa-flag-usa"></i> {{ .LanguageName }}
+        {{ else if eq .Lang "ru" }}
+        <i class="fas fa-flag"></i> {{ .LanguageName }}
+        {{ else }}
+        {{ .LanguageName }}
+        {{ end }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>

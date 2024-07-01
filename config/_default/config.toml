@@ -1,0 +1,50 @@
+baseurl = "https://sandy-docs.immoviewer.com"
+canonifyURLs = false
+disableAliases = true
+disableHugoGeneratorInject = true
+enableEmoji = true
+enableGitInfo = false
+enableRobotsTXT = true
+paginate = 7
+rssLimit = 10
+[params]
+getStartedURL = "/docs/ff_team/general_information/order-page-ff/"
+
+[languages]
+[languages.en]
+languageName = "English"
+contentDir = "content/en"
+weight = 1
+[languages.en.params]
+languageISO = "EN"
+languageTag = "en-US"
+
+[languages.ru]
+languageName = "Russian"
+contentDir = "content/ru"
+weight = 2
+[languages.ru.params]
+languageISO = "RU"
+languageTag = "ru-RU"
+
+[menu]
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "language-en"
+name = "English"
+url = "/en/"
+weight = 1000
+
+[[menu.main]]
+identifier = "language-ru"
+name = "Русский"
+url = "/ru/"
+weight = 1001
+
+[outputs]
+home = ["HTML", "RSS"]

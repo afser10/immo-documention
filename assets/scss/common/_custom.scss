@@ -1,0 +1,199 @@
+/* Импорт шрифтов из Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+/* Основные стили */
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 31.3145px; /* Размер шрифта для заголовков уровня 1 */
+  margin: 0 0 5px; /* Устанавливает верхний и нижний отступы в 20px */
+  color: #000000; /* Цвет текста по умолчанию */
+}
+
+
+h2  {
+     font-family: 'Roboto', sans-serif;
+        font-size: 16px; /* Размер шрифта для заголовков уровня 1 */
+        margin: 0 0 5px; /* Устанавливает верхний и нижний отступы в 20px */
+        color: #000000; /* Цвет текста */
+}
+
+h3 {
+   font-family: 'Roboto', sans-serif;
+           font-size: 17px; /* Размер шрифта для заголовков уровня 1 */
+           margin: 0 0 5px; /* Устанавливает верхний и нижний отступы в 20px */
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em; /* Размер шрифта для заголовков уровня 4 */
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em; /* Размер шрифта для заголовков уровня 5 */
+}
+
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em; /* Размер шрифта для заголовков уровня 6 */
+}
+p.lead.light-theme {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; /* Размер шрифта для заголовков уровня 1 */
+  color: #000000; /* Цвет текста */
+}
+
+p.light-theme {
+     font-family: 'Roboto', sans-serif;
+        font-size: 16px; /* Размер шрифта для заголовков уровня 1 */
+        margin: 0 0 16px; /* Устанавливает верхний и нижний отступы в 20px */
+        color: #000000; /* Цвет текста */
+}
+
+#TableOfContents a.light-theme {
+    font-family: 'Roboto', sans-serif; /* Задайте нужный шрифт */
+    font-size: 13px; /* Задайте размер шрифта */
+    color: #addad; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание текста по умолчанию */
+    transition: color 0.3s ease, font-weight 0.3s ease; /* Анимация смены цвета текста и полужирного шрифта */
+}
+
+#TableOfContents a:hover,
+#TableOfContents a:active,
+#TableOfContents a:focus {
+    text-decoration: underline; /* Подчеркивание текста при наведении, нажатии или фокусе */
+    color: #16536a; /* Цвет текста при наведении, нажатии или фокусе */
+    font-weight: bold; /* Жирный шрифт при наведении, нажатии или фокусе */
+}
+
+#TableOfContents ol {
+    list-style-type: none; /* Убираем маркировку для элементов списка */
+    padding-left: 5; /* Убираем отступ слева у списка */
+}
+
+li {
+     font-family: 'Roboto', sans-serif;
+        font-size: 16px; /* Размер шрифта для заголовков уровня 1 */
+        margin: 0 0 5px; /* Устанавливает верхний и нижний отступы в 20px */
+}
+
+td {
+     font-family: 'Roboto', sans-serif;
+        font-size: 16px; /* Размер шрифта для заголовков уровня 1 */
+        margin: 0 0 5px; /* Устанавливает верхний и нижний отступы в 20px */
+}
+div {
+     font-family: 'Roboto', sans-serif;
+        font-size: 16px; /* Размер шрифта для заголовков уровня 1 */
+        margin: 0 0 5px; /* Устанавливает верхний и нижний отступы в 20px */
+
+}
+.docs-link.rounded.active {
+    font-family: 'Roboto', sans-serif; /* Задаем нужный шрифт */
+    font-size: 14px; /* Задаем размер шрифта */
+    color: #000000; /* Задаем цвет текста */
+    background-color: transparent; /* Начальный цвет фона, если требуется */
+    border: none; /* Удаляем границу, если необходимо */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    display: inline-block; /* Делаем элемент блочным */
+    padding: 8px 16px; /* Задаем отступы */
+    transition: background-color 0.3s ease; /* Анимация смены цвета фона */
+}
+
+/* Подчеркивание текста при наведении курсора */
+.docs-link.rounded.active:hover {
+    text-decoration: underline;
+}
+
+/* Подсветка фона при нажатии и фокусе */
+.docs-link.rounded.active:active,
+.docs-link.rounded.active:focus {
+    background-color: #16536a; /* Цвет фона при нажатии */
+    color: #ffffff; /* Задаем цвет текста */
+    outline: none; /* Убираем обводку при фокусе */
+}
+
+
+.docs-link.rounded {
+  font-family: 'Roboto', sans-serif; /* Задайте нужный шрифт */
+  font-size: 14px; /* Задайте размер шрифта */
+  color: #000000; /* Задайте цвет текста, если необходимо */
+}
+  .btn.btn-toggle.align-items-center.rounded.collapsed.light-theme {
+   font-family: 'Roboto', sans-serif; /* Задайте нужный шрифт */
+      font-size: 14px; /* Задайте размер шрифта */
+      color: #000000; /* Задайте цвет текста */
+      background-color: transparent; /* Начальный цвет фона, если требуется */
+      border: none; /* Удалите границу, если необходимо */
+      text-decoration: none; /* Убираем подчеркивание текста */
+      display: inline-block; /* Делаем элемент блочным */
+      padding: 8px 16px; /* Задаем отступы */
+      transition: background-color 0.3s ease; /* Анимация смены цвета фона */
+  }
+
+  /* Подчеркивание текста при наведении курсора */
+  .docs-link.rounded:hover {
+      text-decoration: underline;
+  }
+
+/* Подсветка фона при нажатии и фокусе */
+.docs-link.rounded:active,
+.docs-link.rounded.active:focus {
+    background-color: #16536a; /* Цвет фона при нажатии */
+    color: #ffffff; /* Задайте цвет текста */
+}
+
+
+.language-switcher {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.language-switcher ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.language-switcher ul li {
+  display: inline;
+}
+
+.language-switcher ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.language-switcher ul li a:hover,
+.language-switcher ul li a.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.language-switcher ul li a i {
+  margin-right: 5px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Равномерное распределение между элементами */
+}
+
+.sidebar-left,
+.sidebar-right {
+  background-color: #f4f4f4;
+  padding: 20px;
+  flex: 1; /* Равномерное распределение по ширине */
+}
+
+.main-content {
+  background-color: #fff;
+  padding: 20px;
+  flex: 5; /* Больше места для основного содержимого */
+}

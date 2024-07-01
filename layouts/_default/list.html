@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  {{ partial "head" . }}
+</head>
+<body>
+{{ partial "header" . }}
+
+<div class="container">
+  <aside class="sidebar-left">
+    <!-- Левое меню -->
+  </aside>
+  <main class="main-content" role="main">
+    {{ range .Pages }}
+    <article>
+      {{ .Render "summary" }}
+    </article>
+    {{ end }}
+    <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ "/docs/ff_team/general_information/order-page-ff/" | relURL }}" role="button">Get Started</a>
+  </main>
+  <aside class="sidebar-right">
+    <!-- Правое меню -->
+  </aside>
+</div>
+
+{{ partial "footer" . }}
+{{ partial "main/blog-meta.html" . }}
+
+<!-- Подключение скриптов -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.0/js/lightbox.js"></script>
+</body>
+</html>
